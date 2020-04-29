@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "swiftoffice-swifthome-dev",
+  "private_key_id": "7e0b064e9d2b1d993b988eb50b3411f818034c4b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC0MejIrjNaRQlz\ndfs9jD2f2n0PcJuDvVlZJoPjuNDJ7JKWOhCi9xyXqCd2NGXa0Wu9WM+aF1TNNS2K\naxAb/36l83Sr6uoVQXeg5MUCCqOpm7dYyP40095eRYzllX1uTEZJZLnCuj/82krz\n/l9D+bVhEVQvjl3acCXliekzJwxvVLBAiKCrhTaSt45+MfHLpDUv86zN2uVJU7eU\nMF6euJpLCAMRCYUMUzIrys32WgNJ5wnOfCXTUySzkshEPCtLwpinc92HuNh4bAW1\nV6V3XYNgnyiOXH4tvdKCnyk/J+isCby3pPTywJvGc1/FhJj/tlvtUUhkcs+wUQpn\nTMSK2sbpAgMBAAECggEAWURiWExoNz99K5xWjwqTGsZf7w6vlAdxJGeerekIUggn\nJFH2nO0DVqQgjH/vt4PItoAxNFp7kb9W5LweOmiLgsXFVkelmEsa6vN6H4VKx8LT\nBSJpQJ13C0e0QaYZgdM6fLBwECY5fddci1xIMIIbl09A3+BM4WJue7Si+MrO77V0\nhtMctET3sqYAyh2t9p1ILAwiyXxUnjg6UFYxYyp5YJfw6UWVl4exZeRRmk5XNZBa\nhWXUOayKIbPkoRihB2OOfLz87GTZaA2CkKdmGC7ZWCIjkG4XW8LlUz8w0DjpW+np\ntYAzAL1dFhfLMne1dgCBSZax4vyC2vrEuPQVbVLYUwKBgQDq0kikFCtQfHe7WehO\nh63nE4zWnv6yNMjWcL3A/2mHylSEI2U1/pGHi7r5E+dmN01abuLlzjTtvLoy7SUo\nZpJLVooH89JbVRm1nbszMK+5i/o3/2mHrkXfRAQINzcL/+M+uc2kXvJponEYb3Oq\nRigVW60NcLSVCJkr1OPsA3kyNwKBgQDEcl9rkwFRgQj0BHzLm2XEFJ3iLN1DYNTi\nY0Lp0A4riosKoUdymD5MVct227jikHoOtKXhhoiEv5Ra952brwqWu0BcD+kLjvwT\nuxqe+tAz1mAM5Y+qBqLTD4MrebdoLRitNDiWshbLflA6XPxrjSjE5QKjYFlAHpup\nun6nIje/3wKBgF7h4yoxYCMgd/zC4mRA3JrfQmxCSGXXgENtwK6oRYrxzV6rMq0z\nlLgxVLZqPXkG5YGiBpqWzLo3JQGI4xfFAl3gtNtrwNbYtw+0kTyo8ohFsDBKSujh\nGSiSwhJTxTFbDwZ8a0R8fPUEBzC5cAIgYPfoWC9zF/SUSdf1KLdn2+PXAoGATmAf\nR8j/1qe3jbuYmpcmM+PR1eH2aSJh7OyTTruOW7rLnHMaEVNCT6xPH92r1uCzgdh6\n8g59uxDAPMbb37gnblnI5LIIVW83jRuyFEmW9YeLDLot5jT9k112BMtr7ClJ1him\nlyD4TTnZAmAE6VgJMvz3X31aPmW3zzCzxTS2r1sCgYA8OnI1WSgMicHARIq7ROZE\nGesW+n52NgbRlpscrvJ8mjMRNMn8m/4qws1aPIJGNK8aRkT50xPQ9FW1rtfpdhQ6\n9I8d34SWjymohPOqucmsu3btZ2a1J8gMepVvz+kKYw04jyE5XBG4X/p7cneSKwi3\ngXJ7jLnhB+ypQU/n9hhSGQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-8904s@swiftoffice-swifthome-dev.iam.gserviceaccount.com",
+  "client_id": "117043850824611714157",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-8904s%40swiftoffice-swifthome-dev.iam.gserviceaccount.com"
+}
