@@ -1,4 +1,13 @@
-from flask import Flask
+import face_recognition
+from flask import Flask, jsonify, request, redirect
+from firebase_admin import credentials, firestore, initialize_app
+import requests
+import os
+import pyrebase
+import face_recognition
+import numpy as np
+
+
 app = Flask(__name__)
 
 
