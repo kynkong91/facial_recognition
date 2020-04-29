@@ -20,7 +20,6 @@ import face_recognition
 import numpy as np
 
 
-'''
 # 1a. Initialize Firestore DB [To gain access to the DB]
 cred = credentials.Certificate('key.json')
 default_app = initialize_app(cred, {
@@ -49,7 +48,7 @@ firebase = pyrebase.initialize_app(config)
 
 # 2c. Create a firebase storage instances
 storage = firebase.storage()
-'''
+
 
 app = Flask(__name__)
 
@@ -64,7 +63,6 @@ def hello_name(name):
     return "Hello {}!".format(name)
 
 
-'''
 
 # Perform encoding and return a dict of {'filename':encoding} [Tested and passed]
 @app.route('/encode_and_upload', methods=['POST'])
@@ -185,7 +183,7 @@ def image_comparison(known_face_encoding_arr, unknown_face_encoding):
 
     # This count the number of matches
     return sum(match_results) > 1
-'''
+
 
 if __name__ == '__main__':
     app.run()
