@@ -154,8 +154,9 @@ def download_image(image_url):
 
     return tempfile_url
 
-
 # Delete image from temp folder
+
+
 def delete_image(image_url):
 
     # Delete the images in the temp storage
