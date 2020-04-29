@@ -20,6 +20,7 @@ import face_recognition
 import numpy as np
 
 
+'''
 # 1a. Initialize Firestore DB [To gain access to the DB]
 cred = credentials.Certificate('key.json')
 default_app = initialize_app(cred, {
@@ -48,7 +49,7 @@ firebase = pyrebase.initialize_app(config)
 
 # 2c. Create a firebase storage instances
 storage = firebase.storage()
-
+'''
 
 app = Flask(__name__)
 
