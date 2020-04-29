@@ -10,13 +10,12 @@
 # curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"image_urls":["chan_a.jpg","chan_b.jpg","jet_li.jpg","positive2.jpg"]}' http://0.0.0.0:5000/facial_recognition
 
 
-import face_recognition
 from flask import Flask, jsonify, request, redirect
-from firebase_admin import credentials, firestore, initialize_app
+#from firebase_admin import credentials, firestore, initialize_app
 import requests
 import os
-import pyrebase
-import face_recognition
+#import pyrebase
+#import face_recognition
 import numpy as np
 
 '''
