@@ -14,8 +14,8 @@ from flask import Flask, jsonify, request, redirect
 #from firebase_admin import credentials, firestore, initialize_app
 import requests
 import os
-#import pyrebase
-#import face_recognition
+import pyrebase
+import face_recognition
 import numpy as np
 
 '''
