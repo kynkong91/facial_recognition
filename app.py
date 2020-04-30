@@ -11,14 +11,14 @@
 
 
 from flask import Flask, jsonify, request, redirect
-#from firebase_admin import credentials, firestore, initialize_app
+from firebase_admin import credentials, firestore, initialize_app
 import requests
 import os
-import pyrebase
 import face_recognition
 import numpy as np
+from google.cloud import storage
+from google.oauth2 import service_account
 
-'''
 # 1a. Initialize Firestore DB [To gain access to the DB]
 cred = credentials.Certificate('key.json')
 default_app = initialize_app(cred, {
@@ -43,11 +43,16 @@ config = {
 }
 
 # 2b. Initialise pyrebase with config file
-firebase = pyrebase.initialize_app(config)
+#firebase = pyrebase.initialize_app(config)
 
 # 2c. Create a firebase storage instances
-storage = firebase.storage()
-'''
+#storage = firebase.storage()
+
+
+storage_client = storage.Client.from_service_account_json(
+    'service_account.json')
+thebucket = storage_client.get_bucket('swiftoffice-swifthome-dev.appspot.com')
+
 
 app = Flask(__name__)
 
@@ -62,7 +67,6 @@ def hello_name(name):
     return "Hello {}!".format(name)
 
 
-'''
 # Perform encoding and return a dict of {'filename':encoding} [Tested and passed]
 @app.route('/encode_and_upload', methods=['POST'])
 def perform_encoding_and_upload():
@@ -150,7 +154,9 @@ def download_image(image_url):
     tempfile_url = "temp_img/" + image_url
 
     # download image to temporary storage
-    storage.child(download_url).download(tempfile_url)
+    # storage.child(download_url).download(tempfile_url)
+    img_blob = thebucket.get_blob(download_url)
+    img_blob.download_to_filename(tempfile_url)
 
     return tempfile_url
 
@@ -182,7 +188,7 @@ def image_comparison(known_face_encoding_arr, unknown_face_encoding):
 
     # This count the number of matches
     return sum(match_results) > 1
-'''
+
 
 if __name__ == '__main__':
     app.run()
