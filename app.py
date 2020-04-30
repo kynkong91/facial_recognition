@@ -20,6 +20,7 @@ from google.cloud import storage
 from google.oauth2 import service_account
 
 # 1a. Initialize Firestore DB [To gain access to the DB]
+'''
 cred = credentials.Certificate('key.json')
 default_app = initialize_app(cred, {
     'storageBucket': 'swifthome-swifthome-dev.appspot.com'
@@ -52,7 +53,7 @@ config = {
 storage_client = storage.Client.from_service_account_json(
     'service_account.json')
 thebucket = storage_client.get_bucket('swiftoffice-swifthome-dev.appspot.com')
-
+'''
 
 app = Flask(__name__)
 
