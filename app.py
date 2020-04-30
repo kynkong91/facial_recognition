@@ -16,8 +16,8 @@ import requests
 import os
 import face_recognition
 import numpy as np
-from google.cloud import storage
-from google.oauth2 import service_account
+#from google.cloud import storage
+#from google.oauth2 import service_account
 
 # 1a. Initialize Firestore DB [To gain access to the DB]
 '''
