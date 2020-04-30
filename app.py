@@ -67,6 +67,7 @@ def hello_name(name):
     return "Hello {}!".format(name)
 
 
+'''
 # Perform encoding and return a dict of {'filename':encoding} [Tested and passed]
 @app.route('/encode_and_upload', methods=['POST'])
 def perform_encoding_and_upload():
@@ -189,6 +190,6 @@ def image_comparison(known_face_encoding_arr, unknown_face_encoding):
     # This count the number of matches
     return sum(match_results) > 1
 
-
+'''
 if __name__ == '__main__':
     app.run()
