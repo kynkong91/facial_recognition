@@ -16,11 +16,11 @@ import requests
 import os
 import face_recognition
 import numpy as np
-#from google.cloud import storage
-#from google.oauth2 import service_account
+from google.cloud import storage
+from google.oauth2 import service_account
 
 # 1a. Initialize Firestore DB [To gain access to the DB]
-'''
+
 cred = credentials.Certificate('key.json')
 default_app = initialize_app(cred, {
     'storageBucket': 'swifthome-swifthome-dev.appspot.com'
@@ -53,7 +53,7 @@ config = {
 storage_client = storage.Client.from_service_account_json(
     'service_account.json')
 thebucket = storage_client.get_bucket('swiftoffice-swifthome-dev.appspot.com')
-'''
+
 
 app = Flask(__name__)
 
@@ -68,7 +68,6 @@ def hello_name(name):
     return "Hello {}!".format(name)
 
 
-'''
 # Perform encoding and return a dict of {'filename':encoding} [Tested and passed]
 @app.route('/encode_and_upload', methods=['POST'])
 def perform_encoding_and_upload():
@@ -191,6 +190,6 @@ def image_comparison(known_face_encoding_arr, unknown_face_encoding):
     # This count the number of matches
     return sum(match_results) > 1
 
-'''
+
 if __name__ == '__main__':
     app.run()
